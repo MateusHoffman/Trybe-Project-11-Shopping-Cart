@@ -1,0 +1,276 @@
+/* font-family: Ubuntu, sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/* font-family: 'Montserrat', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(246 246 246);
+}
+
+.header {
+  position: fixed;
+  background-color: rgb(3 52 45);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+}
+
+.header-cart {
+  position: relative;
+  color: white;
+  background-color: rgb(10 118 79);
+  padding-left: 20px;
+}
+
+.close-icon,
+.display-icon {
+  position: absolute;
+  color: rgb(178 201 144);
+  cursor: pointer;
+  text-shadow: 0 0 20px rgb(3 68 44);
+}
+
+.close-icon {
+  left: -50px;
+  font-size: 2.6rem;
+}
+
+.display-icon {
+  position: absolute;
+  left: -50px;
+  font-size: 2rem;
+  color: rgb(178 201 144);
+  cursor: pointer;
+  text-shadow: 0 0 20px rgb(3 68 44);
+}
+
+#display-cart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.container-title {
+  width: 80%;
+}
+
+.title {
+  color: rgb(221 221 221);
+  font-size: 30px;
+  padding-left: 30px;
+}
+
+.container-cart-title .cart-title {
+  color: white;
+  font-size: 20px;
+  padding-left: 35px;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.title strong {
+  color: white;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 90px 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 5px;
+  padding: 20px;
+  width: 250px;
+  border: 2px solid rgb(234 234 233);
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.item:hover {
+  transition: 400ms;
+  transition-property: box-shadow;
+  box-shadow: 0 0 20px rgb(168 167 167);
+}
+
+.item .item-sku {
+  display: none;
+}
+
+.item-title,
+.cart-item-title {
+  font-weight: 200;
+  font-style: italic;
+}
+
+.item-title,
+.item-image,
+.item-price {
+  margin: 0 0 20px;
+}
+
+.item .item-title {
+  display: flex;
+  align-items: flex-start;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.item .item-image {
+  width: 100%;
+}
+
+.item-price {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.item-add {
+  border-radius: 10px;
+}
+
+.item .item-add {
+  background-color: rgb(5 52 219);
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  padding: 10px;
+  color: white;
+}
+
+.cart-container {
+  width: 375px;
+  position: fixed;
+  z-index: 2;
+  right: -375px;
+  transition: 400ms;
+  transition-property: right;
+}
+
+.cart {
+  display: flex;
+  flex-basis: 32%;
+  flex-flow: column nowrap;
+  background-color: white;
+  height: 100vh;
+  padding: 20px;
+  box-shadow: 0 0 20px rgb(168 167 167);
+}
+
+.cart-item {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.cart-item-remove {
+  align-self: flex-end;
+  padding-right: 20px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.cart-item-remove:hover {
+  opacity: 1;
+}
+
+.cart-item,
+.cart-item-title {
+  margin: 0 0 20px;
+}
+
+.cart-item-price {
+  font-weight: 500;
+}
+
+.cart-items {
+  height: 50%;
+  overflow-y: scroll;
+}
+
+.cart-items li {
+  border-bottom: 1px solid rgb(173 173 173);
+}
+
+.cart-items li:last-child {
+  border-bottom: 0;
+}
+
+.cart-item-image-container {
+  margin: 0 20px 0 0;
+  align-self: flex-start;
+}
+
+.cart-item-image-container img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.cart-item-sku {
+  display: none;
+}
+
+.total-label {
+  margin: 20px 0;
+}
+
+.total-price {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.empty-cart {
+  width: 100%;
+  margin: 20px 0 0;
+  padding: 10px;
+  color: red;
+  border: 1px solid red;
+  border-radius: 10px;
+  background-color: rgb(249 249 246);
+  font-size: 1.1rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.empty-cart:hover {
+  color: white;
+  background-color: red;
+}
+
+@media screen and (max-width: 430px) {
+  .close-icon {
+    position: static;
+    margin-right: 20px;
+    font-size: 2rem;
+  }
+
+  .cart-container {
+    width: 100vw;
+    right: -100vw;
+  }
+}
