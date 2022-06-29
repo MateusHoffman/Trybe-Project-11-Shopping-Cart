@@ -265,7 +265,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 15px;               /* width of the entire scrollbar */
 }
 body::-webkit-scrollbar-track {
   background: darkgrey;        /* color of the tracking area */
