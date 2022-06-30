@@ -1,6 +1,6 @@
 # 💚💚 Trybe-Project-11-Shopping-Cart 💚💚
 
-Project responsible for presenting my skills with HTML, CSS, JavaScript, Jest, LocalStorage and API
+Project responsible for presenting my skills with HTML, CSS, JavaScript, Jest, LocalStorage and API 
 
 ## Access the project:
 ### https://mateushoffman.github.io/Trybe-Project-11-Shopping-Cart
