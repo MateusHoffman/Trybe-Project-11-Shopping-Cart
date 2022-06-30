@@ -1,9 +1,9 @@
-# 💚💚 Trybe-Project-07-Meme-Generator 💚💚
+# 💚💚 Trybe-Project-11-Shopping-Cart 💚💚
 
-Project responsible for presenting my skills with HTML, CSS and JavaScript
+Project responsible for presenting my skills with HTML, CSS, JavaScript, Jest, LocalStorage and API
 
 ## Access the project:
-### https://mateushoffman.github.io/Trybe-Project-07-Meme-Generator
+### https://mateushoffman.github.io/Trybe-Project-11-Shopping-Cart
 
 ## NOTA - 100%
 
