@@ -8,13 +8,13 @@ Project responsible for presenting my skills with HTML, CSS, JavaScript, Jest, L
 ## NOTA - 100%
 
 <div align="center" margin="50px">
-	<img src="img/"/>
+	<img src="img/c.png"/>
 </div>
 
 ## Preview:
 
 <div align="center" margin="50px">
-	<img src="img/"/>
+	<img src="img/a.png"/>
 </div>
 
 ## Connect with me:
